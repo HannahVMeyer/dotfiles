@@ -1,10 +1,12 @@
 " Basic settings {{{
+set encoding=utf-8
 set nocompatible
 set nobackup
 set ignorecase
 set smartcase
 set incsearch
 set hlsearch
+set backspace=indent,eol,start
 
 set shiftwidth=4
 set tabstop=4
@@ -22,21 +24,62 @@ set nojoinspaces
 " }}}
 
 " Vundle {{{
-source ~/.vim/vundle.vim
+  source ~/.vim/vundle.vim
+    if !exists('g:airline_symbols')
+        let g:airline_symbols = {}
+    endif
+
+    " let g:airline_statusline_ontop=1
+
+    let g:airline_solarized_bg='dark'
+
+    " unicode symbols
+    let g:airline_left_sep = ''
+    let g:airline_left_sep = ''
+    let g:airline_right_sep = ''
+    let g:airline_right_sep = ''
+    let g:airline_symbols.crypt = '🔒'
+    let g:airline_symbols.linenr = '☰'
+    let g:airline_symbols.linenr = '␊'
+    let g:airline_symbols.linenr = '␤'
+    let g:airline_symbols.linenr = '¶'
+    let g:airline_symbols.maxlinenr = ''
+    let g:airline_symbols.maxlinenr = '㏑'
+    let g:airline_symbols.branch = '⎇'
+    let g:airline_symbols.paste = 'ρ'
+    let g:airline_symbols.paste = 'Þ'
+    let g:airline_symbols.paste = '∥'
+    let g:airline_symbols.spell = 'Ꞩ'
+    let g:airline_symbols.notexists = 'Ɇ'
+    let g:airline_symbols.whitespace = 'Ξ'
+
+    " powerline symbols
+    let g:airline_left_sep = ''
+    let g:airline_left_alt_sep = ''
+    let g:airline_right_sep = ''
+    let g:airline_right_alt_sep = ''
+    let g:airline_symbols.branch = ''
+    let g:airline_symbols.readonly = ''
+    let g:airline_symbols.linenr = '☰'
+    let g:airline_symbols.maxlinenr = ''
+
+
 " }}}
 
 " Resume basic settings {{{
 filetype on
-syntax on
+syntax enable
 filetype plugin on
 filetype indent on
 " }}}
 
 " Syntax colouring {{{
-
+"
 set t_Co=256
 set bg=dark
-let g:solarized_visibility="low"
+let g:solarized_termtrans=1
+let g:solarized_visibility="normal"
+let g:solarized_contrast="normal"
 colorscheme solarized
 
 " }}}
@@ -52,7 +95,7 @@ set autoread
 set autowrite
 
 set title
-"set mouse=a
+set mouse=a
 
 set laststatus=2
 
@@ -77,8 +120,8 @@ set spell
 set spelllang=en_gb
 " }}}
 
-let g:ycm_confirm_extra_conf = 0
-let g:ycm_filepath_completion_use_working_dir = 1
+"let g:ycm_confirm_extra_conf = 0
+"let g:ycm_filepath_completion_use_working_dir = 1
 " These would be nice to have but they introduce rendering bugs in NeoVim ≤0.2.0.
 "let g:ycm_error_symbol = '⚡︎'
 "let g:ycm_warning_symbol = '⚠︎'
