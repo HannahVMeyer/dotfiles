@@ -1,9 +1,13 @@
 # .files
 
-Pronounced <em>/'dɒtːfaɪlz/</em>. My repository of configuration files to be
+Repository of configuration files to be
 shared between different working machines.
 
-For organisational purposes they are kept *separate* from the actual home
+Adapted from klmr's dotfiles repository:
+ git@github.com:klmr/.files
+
+# klmr's README
+For organisational purposes dotfiles are kept *separate* from the actual home
 directory, and inside a (conveniently hidden) folder `.files`.
 
 Deployment happens via `./deploy`. This will read a local configuration file
@@ -13,7 +17,6 @@ directory without questions asked – proceed with extreme caution and have a
 backup handy!
 
 ## Installation
-
 Run
 
 ```bash
@@ -40,17 +43,3 @@ two configuration files to determine which config files to install:
   this directory are not under version control and need to be maintained
   separately. Patch files should be created using the conventional workflow
   using the `diff` utility.
-
-To install just a single component, you may also run
-
-```bash
-./deploy <(echo COMPONENT)
-```
-
-
-## To do
-
-Modules to add:
-
- * Vim plugin modules (?)
- * `lessrc`, `ackrc` etc.
