@@ -4,7 +4,7 @@ Repository of configuration files to be
 shared between different working machines.
 
 Adapted from klmr's dotfiles repository:
- git@github.com:klmr/.files
+ https://github.com/klmr/.files
 
 # klmr's README
 For organisational purposes dotfiles are kept *separate* from the actual home
