@@ -4,8 +4,8 @@ options(
     repos = c(CRAN = 'https://cran.ma.imperial.ac.uk/'),
     menu.graphics = FALSE, # Seriously, WHAT THE FUCK, R!?
     import.path = '~/.config/R/modules',
-    devtools.name = 'Konrad Rudolph',
-    devtools.desc.author = 'Konrad Rudolph <konrad.rudolph@gmail.com> [aut, cre]',
+    devtools.name = 'Hannah Meyer',
+    devtools.desc.author = 'Hannah Meyer <hannah.v.meyer@gmail.com> [aut, cre]',
     devtools.desc.license = 'file LICENSE',
     devtools.desc.suggests = c('knitr', 'testthat'),
     warnPartialMatchArgs = TRUE,
