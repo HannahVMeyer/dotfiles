@@ -1,14 +1,8 @@
 [user]
-	name = Konrad Rudolph
-	email = konrad.rudolph@gmail.com
+	name = Hannah Meyer
+	email = hannah.v.meyer@gmail.com
 [core]
 	excludesfile = ~/.gitignore_global
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
 [alias]
 	st = status
 	com = commit
